@@ -15,6 +15,22 @@ const keyboard = bot.keyboard([
 ], { resize: true });
 
 const keyboardKR = bot.keyboard([
+    ['KR Era Showa'],
+    ['KR Era Heisei'],
+    ['KR Era Neo-Heisei'],
+    ['KR Era Reiwa'],
+    ['KR Extras'],
+], { resize: true });
+
+const keyboardSS = bot.keyboard([
+    ['SS Era Showa'],
+    ['SS Era Heisei'],
+    ['SS Era Neo-Heisei'],
+    ['SS Era Reiwa'],
+    ['SS Extras'],
+], { resize: true });
+
+const keyboardUltra = bot.keyboard([
     ['Era Showa'],
     ['Era Heisei'],
     ['Era Neo-Heisei'],
@@ -36,10 +52,12 @@ const keyboardKRHeisei = bot.keyboard([
     ['Kuuga'],
     ['Agito'],
     ['Ryuki'],
-    ['Faiz (555)'],
+    ['Faiz/555'],
     ['Blade'],
     ['Hibiki'],
     ['Kabuto'],
+    ['Den-O'],
+    ['Kiva'],
     ['Decade'],
 ], { resize: true });
 
@@ -57,7 +75,7 @@ const keyboardKRNeoHeisei = bot.keyboard([
 ], { resize: true });
 
 const keyboardKRReiwa = bot.keyboard([
-    ['Zero-One (01)'],
+    ['Zero-One/01'],
     ['Saber'],
     ['Revice'],
     ['Geats'],
@@ -241,17 +259,36 @@ krShowa = ['https://t.me/+qnpAvTJOmbw2ODgx',
 ];
 
 krHeisei = [
-
-
+    'https://t.me/+_WpqoUnHQZYzYjNh',
+    'https://t.me/+N5xSS-jdkBE2YjQx',
+    'https://t.me/ODryuki',
+    'https://t.me/+gpWytvzUN_YzODcx',
+    'https://t.me/+nt4YNpfhdb43NDFh',
+    'https://t.me/+O4ZbEi7RCPpkOTRh',
+    'https://t.me/+eIjpi4fWYQk2ZDJh',
+    'https://t.me/+jjc8ZpMx0x1hMzYx',
+    'https://t.me/+RjPAveG-9iE1Nzhh',
+    'https://t.me/+wqNx2UC_ezU1ZGJh'
 ];
 
 krNeoHeisei = [
-
+    'https://t.me/+h2f0iyzYul41OGNh',
+    'https://t.me/KamenRiderOOOSubEsp',
+    'https://t.me/+_2bz3mDSFnsyNWU5',
+    'https://t.me/+2KUgjmC_T2A3YzI5',
+    'https://t.me/+JyFJdUgILWo5ZWRh',
+    'https://t.me/+NFdVYY-86CllNTY5',
+    'https://t.me/+BaB6KAxVens0NjE5',
+    'https://t.me/+gKtf0Dt8LyA4YzAx',
+    'https://t.me/+g0kxJYerOyszYmZh'
 
 ];
 
 krReiwa = [
-
+    'https://t.me/joinchat/1pN7pSCulHAwNDEx',
+    'https://t.me/joinchat/KgnG2lrLgm04MmJh',
+    'https://t.me/+Zf7J3okZvMoxNDBh',
+    'https://t.me/+Mbri_WumGzxhMDRh'
 
 ];
 
@@ -271,7 +308,8 @@ krHBV = [
 //Lógica        
 
 bot.on(["/start", "/henshin"], (msg) => {
-    bot.sendMessage(msg.chat.id, `Hola, ${msg.chat.username}. Bienvenido a TokuFlix`)
+    bot.sendMessage(msg.chat.id, `Hola, ${msg.chat.username}. Bienvenido a TokuFlix. Este bot es desarrollado por @Codeboy1028 para
+    la comunidad TokuFlix. Aún está en fase de desarrollo, por lo que puede haber errores.`)
     const keyboard = bot.keyboard([
         ['Kamen Rider'],
         ['Super Sentai'],
@@ -280,6 +318,7 @@ bot.on(["/start", "/henshin"], (msg) => {
         ['Kaijus'],
         ['Toku en Español Latino'],
         ['Otros'],
+        ['Peticiones de Tokusatsu'],
         ['--|===Donaciones===|--'],
     ], { resize: true });
 
@@ -304,9 +343,12 @@ bot.on('text', (msg) => {
 
         case 'Super Sentai':
             bot.sendMessage(msg.from.id, 'Series Super Sentai');
+
+            bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardSS });
             break;
         case 'Metal Heroes':
             bot.sendMessage(msg.from.id, 'Series Metal Heroes');
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardMH });
             break;
         default:
             // Manejar otros mensajes
@@ -315,22 +357,48 @@ bot.on('text', (msg) => {
 
 
     switch (text) {
-        case 'Era Showa':
+        case 'KR Era Showa':
 
             bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
             break;
-        case 'Era Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
+        case 'KR Era Heisei':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRHeisei });
             break;
 
-        case 'Era Neo-Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
+        case 'KR Era Neo-Heisei':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRNeoHeisei });
             break;
 
-        case 'Era Reiwa':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
+        case 'KR Era Reiwa':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRReiwa });
             break;
 
+        case 'KR Extras':
+            bot.sendMessage(msg.from.id, 'Elige una opción :', { replyMarkup: keyboardKRExtras });
+            break;
+
+    }
+
+    switch (text) {
+        case 'SS Era Showa':
+
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSShowa });
+            break;
+        case 'SS Era Heisei':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSHeisei });
+            break;
+
+        case 'SS Era Neo-Heisei':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSNeoHeisei });
+            break;
+
+        case 'SS Era Reiwa':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSReiwa });
+            break;
+
+        case 'SS Extras':
+            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSExtras });
+            break;
     }
 
     switch (text) {
@@ -365,6 +433,101 @@ bot.on('text', (msg) => {
         case 'Black RX':
             bot.sendMessage(msg.from.id, `[${text}](${krShowa[7]})`, { parseMode: 'Markdown' })
             break;
+
+        case 'Kuuga':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[0]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Agito':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[1]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Ryuki':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[2]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Faiz/555':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[3]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Blade':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[4]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Hibiki':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[5]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Kabuto':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[6]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Den-O':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[7]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Kiva':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[8]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Decade':
+            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[9]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'W':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[0]})`, { parseMode: 'Markdown' })
+            break;
+        case 'OOO':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[1]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Fourze':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[2]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Wizard':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[3]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Gaim':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[4]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Drive':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[5]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Ghost':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[6]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'EX-AID':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[7]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Build':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[8]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'ZI-O':
+            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[9]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Zero-One/01':
+            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[0]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Saber':
+            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[1]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Revice':
+            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[2]})`, { parseMode: 'Markdown' })
+            break;
+
+        case 'Geats':
+            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[3]})`, { parseMode: 'Markdown' })
+            break;
     }
 
     //`[${texto}](${link})`
@@ -372,4 +535,3 @@ bot.on('text', (msg) => {
 
 
 bot.start();
-
