@@ -301,8 +301,78 @@ krEspeciales = [
 ];
 
 krHBV = [
+    //Kamen Rider Kuuga vs. the Strong Monster Go·Jiino·Da
+    //Kamen Rider Agito: Three Great Riders
+    //Kamen Rider Ryuki: Ryuki vs Kamen Rider Agito
+    //Kamen Rider 555: Hyper Battle Video
+    //Kamen Rider Blade: Blade vs. Blade
+    //Kamen Rider Hibiki: Asumu, Transform! You can be an Oni, too!!
+    //Kamen Rider Kabuto: Birth! Gatack Hyper Form!!
+    //Kamen Rider Den-O: Singing, Dancing, Great Training!!
+    //Kamen Rider Kiva: You Can Also be Kiva
+    //Kamen Rider Decade: Protect! The World of Televikun
+    //Kamen Rider W: Donburi's α/Farewell Beloved Recipe
+    //Gaia Memory Great Encyclopedia (W)
+    //Kamen Rider OOO: Quiz, Dance, and Takagarooba!?
+    //Kamen Rider Fourze: Rocket Drill States of Friendship
+    //Kamen Rider Fourze: Astroswitch Secret Report
+    //Kamen Rider Wizard: Showtime with the Dance Ring
+    //Kamen Rider Gaim: Fresh Orange Arms is Born! ~You Can Also Seize It! The Power of Fresh
+    //Type HIGH SPEED! The True Power! Type High Speed is Born!
+    //Type LUPIN: ~Lupin, The Last Challenge~
+    //Drive Type TV-Kun Cover 	Kamen Rider Drive Secret Mission type TV-KUN: Hunter & Monster! Chase the Mystery of the Super Thief!
+    //Kamen Rider Ghost: Ikkyu Eyecon! Awaken, My Quick Wit Power!!
+    //Kamen Rider Ghost: Truth! The Secret Of Heroes' Eyecons!
+    //Kamen Rider Ghost: Ikkyu Eyecon Contention! Quick Wit Battle!!
+    //Kamen Rider Ex-Aid "Tricks": Kamen Rider Lazer
+    //Kamen Rider Ex-Aid "Tricks": Kamen Rider Para-DX
+    //Kamen Rider Build: Birth! KumaTV!! VS Kamen Rider Grease!
+    //Kamen Rider Prime Rogue
+    //Kamen Rider BiBiBi no BibillGeiz
+    //Kamen Rider Zero-One: What Will Pop Out of the Kangaroo? Think About It by Yourself! Yes! It must be me, Aruto!
+    //Kamen Rider Saber: Gather! Hero! The Out-of-Nowhere Dragon TVKun
+    //Kamen Rider Revice: Koala VS Kangaroo!! Do you want to avoid love at the wedding?!
+    //Kamen Rider Revice: Becoming Rider No. 2~♪
+    //Geats HBDVD 	Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja!
+];
+
+mhSeries = [
+ 'https://t.me/+OQDH57sk82tjODVh',
+ 'https://t.me/+UvNMlz0kOpwzYWQx',
+ 'https://t.me/ODshaider',
+ 'No disponible',
+ 'https://t.me/ODspielvan',
+ 'No disponible',
+ 'https://t.me/+elEdE1XhjHQ2ZjEx',
+ 'https://t.me/+ttFWz-WPfwhjODBh',
+ 'No disponible',
+ 'No disponible',
+ 'No disponible',
+ 'No disponible',
+ 'https://t.me/+TGcXaH8AWTtkMzk5',
+ 'https://t.me/+8LfEOBJpr5tiYzhh'
+];
+
+mhPeliculas = [
+    //Shaider the movie
+    // Shaider 2
+    //Metalder
+    //Jiban
+    //Janperson
+    //Blue Swat
+    //B-Fighter
+    //Gokaiger vs Gavan
+    //Gavan (2012)
+    //SH Taisen Z
+    //Sharivan Next Generation
+    //Shaider Next Generation
+    //Chicas en apuros
+    //Gavan vs Dekaranger
+    //Kyuranger vs Space squad
 
 ];
+
+
 
 
 //Lógica        
