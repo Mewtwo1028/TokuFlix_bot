@@ -146,6 +146,7 @@ const keyboardSSNeoHeisei = bot.keyboard([
     ['Kyoryuger'],
     ['Dino Force Brave'],
     ['ToQger'],
+    ['Nininger'],
     ['Zyuogher'],
     ['Kyuranger'],
     ['Lupinranger vs Patranger'],
@@ -274,50 +275,113 @@ const keyboardOtros = bot.keyboard([
 
 
 //Links
-krShowa = ['https://t.me/+qnpAvTJOmbw2ODgx',
-    'https://t.me/AlpakaEspeciales/44',
-    'https://t.me/+Z5QsCdAYz2U4M2Jh',
-    'https://t.me/+9ouCHdgU5dIyNDJh',
-    'https://t.me/+_RP8m-PydtwyZmY5',
-    'https://t.me/+4CwZCnvNHmBiMDJh',
-    'https://t.me/+qTxRNLT8UTczM2Ux',
-    'https://t.me/+GdvDAWYQx1s3MGYx'
-];
+links = {
+    //kamen rider showa
+    'Ichigo': 'https://t.me/+qnpAvTJOmbw2ODgx',
+    'V3': 'https://t.me/AlpakaEspeciales/44',
+    'X': 'https://t.me/+Z5QsCdAYz2U4M2Jh',
+    'Amazon': 'https://t.me/+9ouCHdgU5dIyNDJh',
+    'Stronger': 'https://t.me/+_RP8m-PydtwyZmY5',
+    'Skyrider': 'https://t.me/+4CwZCnvNHmBiMDJh',
+    'Black': 'https://t.me/+qTxRNLT8UTczM2Ux',
+    'Black RX': 'https://t.me/+GdvDAWYQx1s3MGYx',
+    //kamen rider heisei
+    'Kuuga': 'https://t.me/+_WpqoUnHQZYzYjNh',
+    'Agito': 'https://t.me/+N5xSS-jdkBE2YjQx',
+    'Ryuki': 'https://t.me/ODryuki',
+    'Faiz/555': 'https://t.me/+gpWytvzUN_YzODcx',
+    'Blade': 'https://t.me/+nt4YNpfhdb43NDFh',
+    'Hibiki': 'https://t.me/+O4ZbEi7RCPpkOTRh',
+    'Kabuto': 'https://t.me/+eIjpi4fWYQk2ZDJh',
+    'Den-O': 'https://t.me/+jjc8ZpMx0x1hMzYx',
+    'Kiva': 'https://t.me/+RjPAveG-9iE1Nzhh',
+    'Decade': 'https://t.me/+wqNx2UC_ezU1ZGJh',
+    //kamen rider neo heisei
+    'W': 'https://t.me/+h2f0iyzYul41OGNh',
+    'OOO': 'https://t.me/KamenRiderOOOSubEsp',
+    'Fourze': 'https://t.me/+_2bz3mDSFnsyNWU5',
+    'Wizard': 'https://t.me/+2KUgjmC_T2A3YzI5',
+    'Gaim': 'https://t.me/+JyFJdUgILWo5ZWRh',
+    'Drive': 'https://t.me/+NFdVYY-86CllNTY5',
+    'Ghost': 'https://t.me/+cX6DOUtpDHk1MjY5',
+    'Ex-AID': 'https://t.me/+BaB6KAxVens0NjE5',
+    'Build': 'https://t.me/+gKtf0Dt8LyA4YzAx',
+    'ZI-O': 'https://t.me/+g0kxJYerOyszYmZh',
+    //kamen rider reiwa
+    'Zero-One/01': 'https://t.me/joinchat/1pN7pSCulHAwNDEx',
+    'Saber': 'https://t.me/joinchat/KgnG2lrLgm04MmJh',
+    'Revice': 'https://t.me/+Zf7J3okZvMoxNDBh',
+    'Geats': 'https://t.me/+Mbri_WumGzxhMDRh',
+    'Gotchard': 'https://t.me/+HwniWuh-EzU4NTYx',
 
-krHeisei = [
-    'https://t.me/+_WpqoUnHQZYzYjNh',
-    'https://t.me/+N5xSS-jdkBE2YjQx',
-    'https://t.me/ODryuki',
-    'https://t.me/+gpWytvzUN_YzODcx',
-    'https://t.me/+nt4YNpfhdb43NDFh',
-    'https://t.me/+O4ZbEi7RCPpkOTRh',
-    'https://t.me/+eIjpi4fWYQk2ZDJh',
-    'https://t.me/+jjc8ZpMx0x1hMzYx',
-    'https://t.me/+RjPAveG-9iE1Nzhh',
-    'https://t.me/+wqNx2UC_ezU1ZGJh'
-];
+    //super sentai
+    'Goranger': 'https://t.me/APK_Gorenger_1975',
+    'J.A.K.Q': 'https://t.me/+TcpsnqEIT0ugZtxl',
+    'Battle Fever J': 'https://t.me/+UHnU58ujs9gwY2Ix',
+    'Denziman': 'https://t.me/+ZDo4dkbFGXNiNGZh',
+    'Sun Vulcan': 'https://t.me/+BRp9DxIR0F5iMGYx',
+    'Goggle V': 'https://t.me/+Ib1IxM9nif42MTAx',
+    'Dynaman': 'https://t.me/joinchat/id09JlXqjXlkNzcx',
+    'Bioman': 'https://t.me/+y27pjBzFJxs5MzZh',
+    'Changeman': 'https://t.me/+KVuYi3jKFXg2OTU5',
+    'Flashman': 'https://t.me/+IOt7ZqlzNkRiMzNk',
+    'Maskman': 'https://t.me/+5iRszX84BCMyOGYx',
+    'Liveman': 'https://t.me/+YIuSISt82tJjZTU5',
+    'Turboranger': 'https://t.me/+frA9IxWtSxs3ZWNh',
+    'Fiveman': 'https://t.me/+MY5wnXvDB_AwZDBh',
+    'Jetman': 'https://t.me/+OSYnxL1A8PsxMjVh',
+    'Zyuranger': 'https://t.me/+FwUEiWrLX2FhYTlh',
+    'Dairanger': 'https://t.me/+qlJTO0kp13ZkOTVh',
+    'Kakuranger': 'https://t.me/+cERRI6eCs3JhNWZh',
+    'Ohranger': 'https://t.me/+tlLeP9ZMGSljZWUx',
+    'Carranger': 'https://t.me/+ZkciYdj3sEMwNTVh',
+    'Megaranger': 'https://t.me/+Ctj3UCzqLOE3ZTYx',
+    'Gingaman': 'https://t.me/+IQK1YFcK5-o2ZWEx',
+    'GoGo-V': 'https://t.me/+zOmyj3IQl4I0YzUx',
+    'Timeranger': 'https://t.me/+ycP1kb2qg7w0MTE5',
+    'Gaoranger': 'https://t.me/+7gfsTDtw0U43NGY5',
+    'Hurricaneger': 'https://t.me/+58bCZVJy1V1lYjlh',
+    'Abarranger': 'https://t.me/IFAbaranger',
+    'Dekaranger': 'https://t.me/IFDekaranger',
+    'Magiranger': 'https://t.me/magirangerhd',
+    'Bokenger': 'https://t.me/+yKAIdHjfuEg4YmIx',
+    'Gekiranger': 'https://t.me/+6BYSM-9fEXdkNzM5',
+    'Go-Onger': 'https://t.me/+X1kg345lxzQzOTk5',
+    'Shinkenger': 'https://t.me/+kpeEWjzbol8xZGEx',
+    'Goseiger': 'https://t.me/+bWYWL0SHuoVmYTNh',
+    'Gokaiger': 'https://t.me/+EqgAbSuesQYwZWMx',
+    'Go-Busters': 'https://t.me/TokusatsuSubEspHD',
+    'Kyoryuger': 'https://t.me/+oN1TOB2-n18zYmJh',
+    'Dino Force Brave': 'https://t.me/+hBcM-4Yk9m8yNTBh',
+    'ToQger': 'https://t.me/toqger2014',
+    'Nininger': 'https://t.me/ninninger2015',
+    'Zyuogher': 'https://t.me/dobutsu2016',
+    'Kyuranger': 'https://t.me/+qcjkFBVZnCcxMThh',
+    'Lupinranger vs Patranger': 'https://t.me/+x4pHUCB38HY4OGRh',
+    'Ryusoulger': 'https://t.me/+e-iuBag-_103YjJh',
+    'Kiramager': 'https://t.me/joinchat/IHP6dpnmCUk3ODAx',
+    'Zenkaiger': 'https://t.me/joinchat/7xkVL3lrep0xZDAx',
+    'DonBrothers': 'https://t.me/+hoOfLQpAdRhiNTlh',
+    'King-Ohger': 'https://t.me/+qO7TcjIyuhhhZDk5',
 
-krNeoHeisei = [
-    'https://t.me/+h2f0iyzYul41OGNh',
-    'https://t.me/KamenRiderOOOSubEsp',
-    'https://t.me/+_2bz3mDSFnsyNWU5',
-    'https://t.me/+2KUgjmC_T2A3YzI5',
-    'https://t.me/+JyFJdUgILWo5ZWRh',
-    'https://t.me/+NFdVYY-86CllNTY5',
-    'https://t.me/+cX6DOUtpDHk1MjY5',
-    'https://t.me/+BaB6KAxVens0NjE5',
-    'https://t.me/+gKtf0Dt8LyA4YzAx',
-    'https://t.me/+g0kxJYerOyszYmZh'
+    //Metal Hero
+    'Gavan': 'https://t.me/+OQDH57sk82tjODVh',
+    'Shaider': 'https://t.me/+UvNMlz0kOpwzYWQx',
+    'Sharivan': 'https://t.me/ODshaider',
+    'Juspion': 'No disponible',
+    'Spielvan': 'https://t.me/ODspielvan',
+    'Metalder': 'https://t.me/+elEdE1XhjHQ2ZjEx',
+    'Jiraiya': 'https://t.me/+ttFWz-WPfwhjODBh',
+    'Jiban': 'No disponible',
+    'Winspector': 'No disponible',
+    'Solbrain': 'No disponible',
+    'Exceedraft': 'No disponible',
+    'Janperson': 'No disponible',
+    'Blue Swat': 'No disponible',
+    'B-Fighter': 'https://t.me/+TGcXaH8AWTtkMzk5',
+    'B-Fighter Kabuto': 'https://t.me/+8LfEOBJpr5tiYzhh'
+};
 
-];
-
-krReiwa = [
-    'https://t.me/joinchat/1pN7pSCulHAwNDEx',
-    'https://t.me/joinchat/KgnG2lrLgm04MmJh',
-    'https://t.me/+Zf7J3okZvMoxNDBh',
-    'https://t.me/+Mbri_WumGzxhMDRh'
-
-];
 
 krPeliculas = [
     /*Showa
@@ -676,23 +740,7 @@ krHBV = [
     //Geats HBDVD 	Kamen Rider Geats: What the hell?! Desire Grand Prix Full of Men! I'm Ouja!
 ];
 
-mhSeries = [
-    'https://t.me/+OQDH57sk82tjODVh',
-    'https://t.me/+UvNMlz0kOpwzYWQx',
-    'https://t.me/ODshaider',
-    'No disponible',
-    'https://t.me/ODspielvan',
-    'https://t.me/+elEdE1XhjHQ2ZjEx',
-    'https://t.me/+ttFWz-WPfwhjODBh',
-    'No disponible',
-    'No disponible',
-    'No disponible',
-    'No disponible',
-    'No disponible',
-    'No disponible',
-    'https://t.me/+TGcXaH8AWTtkMzk5',
-    'https://t.me/+8LfEOBJpr5tiYzhh'
-];
+
 
 mhPeliculas = [
     //Shaider the movie
@@ -712,58 +760,6 @@ mhPeliculas = [
     //Kyuranger vs Space squad
 
 ];
-
-ssSeries = [
-    'https://t.me/APK_Gorenger_1975',//Goranger
-    'https://t.me/+TcpsnqEIT0ugZtxl',
-    'https://t.me/+UHnU58ujs9gwY2Ix',//Battle fever J
-    'https://t.me/+ZDo4dkbFGXNiNGZh',//Denziman
-    'https://t.me/+BRp9DxIR0F5iMGYx',//Sun Vulcan
-    'https://t.me/+Ib1IxM9nif42MTAx',//Goggle V
-    'https://t.me/joinchat/id09JlXqjXlkNzcx',//Dynaman
-    'https://t.me/+y27pjBzFJxs5MzZh',//Bioman
-    'https://t.me/+KVuYi3jKFXg2OTU5',//Changeman
-    'https://t.me/+IOt7ZqlzNkRiMzNk',//Flashman
-    'https://t.me/+5iRszX84BCMyOGYx',//Maskman
-    'https://t.me/+YIuSISt82tJjZTU5',//Liveman
-    'https://t.me/+frA9IxWtSxs3ZWNh',//Turboranger
-    'https://t.me/+MY5wnXvDB_AwZDBh',//Fiveman
-    'https://t.me/+OSYnxL1A8PsxMjVh',//Jetman
-    'https://t.me/+FwUEiWrLX2FhYTlh',//Zyuranger
-    'https://t.me/+qlJTO0kp13ZkOTVh',//Dairanger
-    'https://t.me/+cERRI6eCs3JhNWZh',//Kakuranger
-    'https://t.me/+tlLeP9ZMGSljZWUx',//Ohranger
-    'https://t.me/+ZkciYdj3sEMwNTVh',//Carranger
-    'https://t.me/+Ctj3UCzqLOE3ZTYx',//Megaranger
-    'https://t.me/+IQK1YFcK5-o2ZWEx',//Gingaman
-    'https://t.me/+zOmyj3IQl4I0YzUx',//GoGoV
-    'https://t.me/+ycP1kb2qg7w0MTE5',//Timeranger
-    'https://t.me/+7gfsTDtw0U43NGY5',//Gaoranger
-    'https://t.me/+58bCZVJy1V1lYjlh',//Hurricanger
-    'https://t.me/IFAbaranger',//Abarrenger
-    'https://t.me/IFDekaranger',//Dekaranger
-    'https://t.me/magirangerhd',//Magiranger
-    'https://t.me/+yKAIdHjfuEg4YmIx',//Bokenger
-    'https://t.me/+6BYSM-9fEXdkNzM5',//Gekiranger
-    'https://t.me/+X1kg345lxzQzOTk5',//Go-Onger
-    'https://t.me/+kpeEWjzbol8xZGEx',//Shinkenger
-    'https://t.me/+bWYWL0SHuoVmYTNh',//Goseiger
-    'https://t.me/+EqgAbSuesQYwZWMx',//Gokaiger
-    'https://t.me/TokusatsuSubEspHD',//Go-Busters
-    'https://t.me/+oN1TOB2-n18zYmJh',//Kyoryuger
-    'https://t.me/+hBcM-4Yk9m8yNTBh',//Power Rangers Dino Force Brave
-    'https://t.me/toqger2014',//Toqger
-    'https://t.me/ninninger2015',//Nininger
-    'https://t.me/dobutsu2016',//Zyougher
-    'https://t.me/+qcjkFBVZnCcxMThh',//Kyuranger
-    'https://t.me/+x4pHUCB38HY4OGRh',//Lupin vs Pat
-    'https://t.me/+e-iuBag-_103YjJh',//Ryusoulger
-    'https://t.me/joinchat/IHP6dpnmCUk3ODAx',//Kiramager
-    'https://t.me/joinchat/7xkVL3lrep0xZDAx',//Zenkaiger
-    'https://t.me/+hoOfLQpAdRhiNTlh',//Donbrothers
-    'https://t.me/+qO7TcjIyuhhhZDk5'//King-Ohger
-
-]
 
 
 
@@ -797,7 +793,7 @@ bot.on('text', (msg) => {
     switch (text) {
         case 'Kamen Rider':
             bot.sendMessage(msg.from.id, 'Series Kamen Rider');
-
+            
             // Enviar mensaje con el teclado
             bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardKR });
 
@@ -816,10 +812,7 @@ bot.on('text', (msg) => {
             // Manejar otros mensajes
             bot.sendMessage(msg.from.id, 'Elige una opción:', { replyMarkup: keyboard });
             break;
-    }
 
-
-    switch (text) {
         case 'KR Era Showa':
 
             bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
@@ -840,10 +833,6 @@ bot.on('text', (msg) => {
             bot.sendMessage(msg.from.id, 'Elige una opción :', { replyMarkup: keyboardKRExtras });
             break;
 
-
-    }
-
-    switch (text) {
         case 'SS Era Showa':
 
             bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSShowa });
@@ -864,402 +853,24 @@ bot.on('text', (msg) => {
             bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSExtras });
             break;
 
-    }
-
-    switch (text) {
-        case 'Ichigo':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[0]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'V3':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'X':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Amazon':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[3]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Stronger':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[4]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Skyrider':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[5]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Black':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[6]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Black RX':
-            bot.sendMessage(msg.from.id, `[${text}](${krShowa[7]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kuuga':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[0]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Agito':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Ryuki':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Faiz/555':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[3]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Blade':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[4]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Hibiki':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[5]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kabuto':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[6]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Den-O':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[7]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kiva':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[8]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Decade':
-            bot.sendMessage(msg.from.id, `[${text}](${krHeisei[9]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'W':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[0]})`, { parseMode: 'Markdown' })
-            break;
-        case 'OOO':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Fourze':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Wizard':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[3]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Gaim':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[4]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Drive':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[5]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Ghost':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[6]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Ex-AID':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[7]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Build':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[8]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'ZI-O':
-            bot.sendMessage(msg.from.id, `[${text}](${krNeoHeisei[9]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Zero-One/01':
-            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[0]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Saber':
-            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Revice':
-            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Geats':
-            bot.sendMessage(msg.from.id, `[${text}](${krReiwa[3]})`, { parseMode: 'Markdown' })
-            break;
-
-
-    }
-
-    switch (text) {
-
-        case 'Goranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[0]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'J.A.K.Q':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Battle Fever J':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Denziman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[3]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Sun Vulcan':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[4]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Goggle V':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[5]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Dynaman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[6]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Bioman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[7]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Changeman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[8]})`, { parseMode: 'Markdown' })
-            break;
-
-
-        case 'Flashman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[9]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Maskman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[10]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Liveman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[11]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Turboranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[12]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Fiveman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[13]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Jetman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[14]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Zyuranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[15]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Dairanger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[16]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kakuranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[17]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Ohranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[18]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Carranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[19]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Megaranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[20]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Gingaman':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[21]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'GoGo-V':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[22]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Timeranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[23]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Gaoranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[24]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Hurricaneger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[25]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Abarranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[26]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Dekaranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[27]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Magiranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[28]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Bokenger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[29]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Gekiranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[30]})`, { parseMode: 'Markdown' })
-            break;
-
-
-        case 'Go-Onger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[31]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Shinkenger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[32]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Goseiger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[33]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Gokaiger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[34]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Go-Busters':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[35]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kyoryuger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[36]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Dino Force Brave':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[37]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'ToQger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[38]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Nininger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[39]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Zyuogher':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[40]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kyuranger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[41]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Lupin vs Pat':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[42]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Ryusoulger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[43]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Kiramager':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[44]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Zenkaiger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[45]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'DonBrothers':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[46]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'King-Ohger':
-            bot.sendMessage(msg.from.id, `[${text}](${ssSeries[47]})`, { parseMode: 'Markdown' })
-            break;
+            default:
+                // Verificar si el valor está en el hashmap
+                if (!links.hasOwnProperty(text)) {
+                    bot.sendMessage(msg.from.id, 'Opción no válida. https://t.me/TokusatsuSubEspHD', { parseMode: 'Markdown' });
+                }
+                break;    
     }
 
 
-    switch (text) {
-        case 'Gavan':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[0]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Shaider':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[1]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Sharivan':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[2]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Juspion':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[3]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Spielvan':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[4]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Metalder':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[5]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Jiraiya':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[6]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Jiban':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[7]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Winspector':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[8]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Solbrain':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[9]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'Exceedraft':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[10]})`, { parseMode: 'Markdown' })
-            break;
 
 
-        case 'Janperson':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[11]})`, { parseMode: 'Markdown' })
-            break;
 
+    links[text] != 'No disponible' ? bot.sendMessage(msg.from.id, `[${text}](${links[text]})`, { parseMode: 'Markdown' }) : bot.sendMessage(msg.from.id, links[text], { parseMode: 'Markdown' })
 
-        case 'Blue Swat':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[12]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'B-Fighter':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[13]})`, { parseMode: 'Markdown' })
-            break;
-
-        case 'B-Fighter Kabuto':
-            bot.sendMessage(msg.from.id, `[${text}](${mhSeries[14]})`, { parseMode: 'Markdown' })
-            break;
-    }
 
     //`[${texto}](${link})`
+
+
 });
 
 
