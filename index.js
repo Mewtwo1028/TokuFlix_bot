@@ -766,111 +766,118 @@ mhPeliculas = [
 //Lógica        
 
 bot.on(["/start", "/henshin"], (msg) => {
-    bot.sendMessage(msg.chat.id, `Hola, ${msg.chat.username}. Bienvenido a TokuFlix. Este bot es desarrollado por @Codeboy1028 para
+    try {
+        bot.sendMessage(msg.chat.id, `Hola, ${msg.chat.username}. Bienvenido a TokuFlix. Este bot es desarrollado por @Codeboy1028 para
     la comunidad TokuFlix. Aún está en fase de desarrollo, por lo que puede haber errores.`)
-    const keyboard = bot.keyboard([
-        ['Kamen Rider'],
-        ['Super Sentai'],
-        ['Metal Heroes'],
-        ['Ultraman'],
-        ['Kaijus'],
-        ['Toku en Español Latino'],
-        ['Otros'],
-        ['Peticiones de Tokusatsu'],
-        ['--|===Donaciones===|--'],
-    ], { resize: true });
+        const keyboard = bot.keyboard([
+            ['Kamen Rider'],
+            ['Super Sentai'],
+            ['Metal Heroes'],
+            ['Ultraman'],
+            ['Kaijus'],
+            ['Toku en Español Latino'],
+            ['Otros'],
+            ['Peticiones de Tokusatsu'],
+            ['--|===Donaciones===|--'],
+        ], { resize: true });
 
-    // Enviar mensaje con el teclado
-    bot.sendMessage(msg.from.id, 'Elige una opción:', { replyMarkup: keyboard });
+        // Enviar mensaje con el teclado
+        bot.sendMessage(msg.from.id, 'Elige una opción:', { replyMarkup: keyboard });
+    } catch (error) {
+        console.error("Error al enviar el mensaje inicial:", error);
+    }
 })
 
 
 // Manejador para mensajes del teclado
 bot.on('text', (msg) => {
+
     const text = msg.text;
+    try {
+        // Manejar las opciones del teclado
+        switch (text) {
+            case 'Kamen Rider':
+                bot.sendMessage(msg.from.id, 'Series Kamen Rider');
 
-    // Manejar las opciones del teclado
-    switch (text) {
-        case 'Kamen Rider':
-            bot.sendMessage(msg.from.id, 'Series Kamen Rider');
-            
-            // Enviar mensaje con el teclado
-            bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardKR });
+                // Enviar mensaje con el teclado
+                bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardKR });
 
-            break;
+                break;
 
-        case 'Super Sentai':
-            bot.sendMessage(msg.from.id, 'Series Super Sentai');
+            case 'Super Sentai':
+                bot.sendMessage(msg.from.id, 'Series Super Sentai');
 
-            bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardSS });
-            break;
-        case 'Metal Heroes':
-            bot.sendMessage(msg.from.id, 'Series Metal Heroes');
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardMH });
-            break;
-        case '<- Inicio':
-            // Manejar otros mensajes
-            bot.sendMessage(msg.from.id, 'Elige una opción:', { replyMarkup: keyboard });
-            break;
+                bot.sendMessage(msg.from.id, 'Elige una era:', { replyMarkup: keyboardSS });
+                break;
+            case 'Metal Heroes':
+                bot.sendMessage(msg.from.id, 'Series Metal Heroes');
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardMH });
+                break;
+            case '<- Inicio':
+                // Manejar otros mensajes
+                bot.sendMessage(msg.from.id, 'Elige una opción:', { replyMarkup: keyboard });
+                break;
 
-        case 'KR Era Showa':
+            case 'KR Era Showa':
 
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
-            break;
-        case 'KR Era Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRHeisei });
-            break;
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRShowa });
+                break;
+            case 'KR Era Heisei':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRHeisei });
+                break;
 
-        case 'KR Era Neo-Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRNeoHeisei });
-            break;
+            case 'KR Era Neo-Heisei':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRNeoHeisei });
+                break;
 
-        case 'KR Era Reiwa':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRReiwa });
-            break;
+            case 'KR Era Reiwa':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardKRReiwa });
+                break;
 
-        case 'KR Extras':
-            bot.sendMessage(msg.from.id, 'Elige una opción :', { replyMarkup: keyboardKRExtras });
-            break;
+            case 'KR Extras':
+                bot.sendMessage(msg.from.id, 'Elige una opción :', { replyMarkup: keyboardKRExtras });
+                break;
 
-        case 'SS Era Showa':
+            case 'SS Era Showa':
 
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSShowa });
-            break;
-        case 'SS Era Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSHeisei });
-            break;
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSShowa });
+                break;
+            case 'SS Era Heisei':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSHeisei });
+                break;
 
-        case 'SS Era Neo-Heisei':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSNeoHeisei });
-            break;
+            case 'SS Era Neo-Heisei':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSNeoHeisei });
+                break;
 
-        case 'SS Era Reiwa':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSReiwa });
-            break;
+            case 'SS Era Reiwa':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSReiwa });
+                break;
 
-        case 'SS Extras':
-            bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSExtras });
-            break;
+            case 'SS Extras':
+                bot.sendMessage(msg.from.id, 'Elige una Temporada:', { replyMarkup: keyboardSSExtras });
+                break;
 
             default:
                 // Verificar si el valor está en el hashmap
                 if (!links.hasOwnProperty(text)) {
                     bot.sendMessage(msg.from.id, 'Opción no válida. https://t.me/TokusatsuSubEspHD', { parseMode: 'Markdown' });
                 }
-                break;    
+                break;
+        }
+
+
+
+
+
+        links[text] != 'No disponible' ? bot.sendMessage(msg.from.id, `[${text}](${links[text]})`, { parseMode: 'Markdown' }) : bot.sendMessage(msg.from.id, links[text], { parseMode: 'Markdown' })
+
+
+        //`[${texto}](${link})`
+
+    } catch (error) {
+        console.error("Error al manejar el texto:", error);
     }
-
-
-
-
-
-    links[text] != 'No disponible' ? bot.sendMessage(msg.from.id, `[${text}](${links[text]})`, { parseMode: 'Markdown' }) : bot.sendMessage(msg.from.id, links[text], { parseMode: 'Markdown' })
-
-
-    //`[${texto}](${link})`
-
-
 });
 
 
